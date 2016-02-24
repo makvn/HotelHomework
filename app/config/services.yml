@@ -1,0 +1,12 @@
+parameters:
+
+services:
+#    app.room_finder:
+#        class: AppBundle\Service\RoomFinderService
+#        arguments:
+#            - @doctrine.orm.entity_manager
+#
+#    app.offer:
+#        class: AppBundle\Controller\OfferController
+#        calls:
+#            - [setFinder, ['@app.room_finder']]

@@ -1,0 +1,17 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+add_offers:
+    path: /api/offers
+    defaults: {_controller: app.offer:addAction}
+    methods:  [POST]
+    requirements:
+        date:  '[0-9]{4}\-[0-9]{2}\-[0-9]{2}'
+
+remove_offers:
+    path: /api/offers/{id}
+    defaults: {_controller: app.offer:removeAction}
+    methods:  [DELETE]
+    requirements:
+        id:  \d+
